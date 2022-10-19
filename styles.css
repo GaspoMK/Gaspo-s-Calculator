@@ -7,17 +7,17 @@
   text-align: center;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+#display {
+  background-color: #00b894;
+  height: 200px;
+  text-align: center;
+}
 #botonera {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto;
   justify-content: center;
   padding: 5px;
-}
-#display {
-  background-color: #00b894;
-  height: 200px;
-  text-align: center;
 }
 .botones {
   color: white;
