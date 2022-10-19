@@ -1,65 +1,70 @@
 .body {
-  max-width: 800px;
-  margin: auto auto;
+    max-width: 800px;
+    margin: auto auto;
 }
 .titulo {
-  color: rgb(18, 143, 105);
-  text-align: center;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: rgb(18, 143, 105);
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 #display {
-  background-color: #00b894;
-  height: 200px;
-  text-align: center;
+    grid-area: display;
+    background-color: #a3eedf;
+    font-size: 45px;
+    font-weight: bold;
+    min-height: 200px;
+    border-radius: 10px;
+    text-align: center;
 }
-#botonera {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  justify-content: center;
-  padding: 5px;
+#calculadora {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "display display display";
+    justify-content: center;
+    padding: 5px;
 }
 .botones {
-  color: white;
-  font-size: 45px;
-  font-weight: bold;
-  border: #3931ce 1px;
-  border-radius: 10px;
-  width: 150px;
-  height: 150px;
-  margin: 3px;
-  cursor: pointer;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    border: #3931ce 1px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 3px;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .botones:hover {
-  filter: brightness(80%);
-  transition: filter 0.25s;
-  -webkit-filter: brightness(80%);
-  -webkit-transition: filter 0.25s;
-  -moz-transition: filter 0.25s;
-  -ms-transition: filter 0.25s;
-  -o-transition: filter 0.25s;
+    filter: brightness(80%);
+    transition: filter 0.25s;
+    -webkit-filter: brightness(80%);
+    -webkit-transition: filter 0.25s;
+    -moz-transition: filter 0.25s;
+    -ms-transition: filter 0.25s;
+    -o-transition: filter 0.25s;
 }
 .boton1,
 .boton2,
 .boton3 {
-  background-color: #e17055;
+    background-color: #e17055;
 }
 .boton4,
 .boton5,
 .boton6 {
-  background-color: #0984e3;
+    background-color: #0984e3;
 }
 .boton7,
 .boton8,
 .boton9 {
-  background-color: #00b894;
+    background-color: #00b894;
 }
 .boton0 {
-  background-color: #2d3436;
-  order: 10;
-  grid-column-start: 2;
+    background-color: #2d3436;
+    order: 10;
+    grid-column-start: 2;
 }
