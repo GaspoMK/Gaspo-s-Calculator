@@ -1,4 +1,4 @@
-function mensaje(num) {
+function input(num) {
     let numDisplay = document.getElementById("display");
     numDisplay.innerHTML = num;
 }
@@ -41,6 +41,7 @@ function tomarElementoClickeado(num) {
             break;
     }
 }
+//function
 
 // TODO: crear funcion que contenga las dos creadas para ser
 // ejecutada cuando hay un click
