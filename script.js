@@ -1,13 +1,12 @@
-function input(num) {
+function mostrarYColor(num) {
+    mostrar(num);
+    color(num);
+}
+function mostrar(num) {
     let numDisplay = document.getElementById("display");
     numDisplay.innerHTML = num;
 }
-function addDiv() {
-    let elemento = document.getElementById("contenedor");
-    let agregarDiv = document.createElement("div");
-    elemento.insertBefore(agregarDiv, null);
-}
-function tomarElementoClickeado(num) {
+function color(num) {
     switch (num) {
         case 0:
             document.getElementById("boton0").style.color = "white";
@@ -41,10 +40,11 @@ function tomarElementoClickeado(num) {
             break;
     }
 }
-//function
-
-// TODO: crear funcion que contenga las dos creadas para ser
-// ejecutada cuando hay un click
+function addDiv() {
+    let elemento = document.getElementById("contenedor");
+    let agregarDiv = document.createElement("div");
+    elemento.insertBefore(agregarDiv, null);
+}
 
 // TODO: crear una funcion que agregue un div a ese contenedor
 // en la parte superior del contenedor con el numero
@@ -52,6 +52,9 @@ function tomarElementoClickeado(num) {
 // hacia abajao en forma de columna)
 
 //    HECHO
+
+// TODO: crear funcion que contenga las dos creadas para ser
+// ejecutada cuando hay un click
 
 // TODO: leer el link que te pase y aprender a agregar un div en
 // un 'contenedor' debajo de la 'calculadora'
