@@ -5,7 +5,8 @@
 .titulo {
     color: rgb(18, 143, 105);
     text-align: center;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Silkscreen", cursive;
+    font-size: 50px;
 }
 #display {
     grid-area: display;
